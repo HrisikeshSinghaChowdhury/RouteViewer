@@ -1,8 +1,11 @@
-<footer class="footer text-muted bg-light">
+<footer class="footer bg-light">
   <div class="container">
-    <span>© <%= Date.today.year %>Self Owned</span>
-      <ul class="list-inline mb-0 float-right">
-        <li class="list-inline-item mr-3"><%= link_to "Privacy", privacy_path %>
+    <h5>© <%= Date.today.year %>Self Owned</h5>
+      <ul>
+        <li><%= link_to "Home", root_path %>
+        </li>
+
+        <li><%= link_to "Privacy", privacy_path %>
         </li>
       </ul>
   </div>

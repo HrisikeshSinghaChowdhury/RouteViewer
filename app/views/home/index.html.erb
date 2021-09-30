@@ -1,3 +1,1 @@
-<h1>Welcome to QIMap RouteMap</h1>
-<p class="lead">The default map is pointing to Singapore</p>
-<%= link_to "Route Viewer", new_stop_url, class: "navbar-brand" %>
+<%= link_to "Route Viewer", new_stop_url, method: :get, class: "navbar-brand", data: { confirm: "You will be redirected to RouteViewer Page.Press OK to continue!!" } %>
