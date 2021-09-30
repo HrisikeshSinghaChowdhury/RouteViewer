@@ -4,15 +4,10 @@
 
 body {
   background-color: rgb(73,217,189);
-  margin-bottom: 10px;
-  margin-top: 10px;
-  margin-right:10px;
 }
 
 .container {
-  margin-top :auto;
-  margin-left : 40%;
-  max-width : 80%;
+ max-width : 90%;
 }
 
 /* Sticky footer styles
@@ -20,8 +15,6 @@ body {
 .footer {
   position: absolute;
   bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 10px;
-  line-height: 10px; /* Vertically center the text there */
+  max-width: 80%;
+  background-color: rgb(73,21,18);
 }

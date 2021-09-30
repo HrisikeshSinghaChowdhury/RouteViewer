@@ -1,7 +1,7 @@
 <%= form_with( model: stop, local: true ) do |form| %>
   <% if stop.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(stop.errors.count, "error") %> prohibited this stop from being saved:</h2>
+      <h2><%= pluralize(stop.errors.count, "error") %> prohibited this stop from being searched:</h2>
 
       <ul>
       <% stop.errors.full_messages.each do |message| %>
@@ -11,22 +11,21 @@
     </div>
   <% end %>
 
-
     <div class="p-4">
       <div class="form-group">
         <%= form.label :"From Address" %>
-        <%= form.search_field :address, class: 'form-control', data: { target: "#", action: "#" }%>
+        <%= form.search_field :address, class: 'form-control', data: { target: "#", action: "#" } %>
       </div>
 
       <div class="form-group">
         <%= form.label :"To Address" %>
-        <%= form.search_field :address, class: 'form-control', data: { target: "#", action: "#" }%>
+        <%= form.search_field :address, class: 'form-control', data: { target: "#", action: "#" } %>
       </div>
     </div>
 
-
-  <br>
-  <div class="form-group p-4">
-    <%= form.submit class: 'btn btn-primary' %>
-  </div>
+    <br>
+    <div class="form-group p-4">
+      <%= form.submit :"View Route", class: 'btn btn-primary' %>
+    </div>
 <% end %>
+
